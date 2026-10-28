@@ -1,0 +1,36 @@
+{
+  "name": "agent-session-audit",
+  "version": "0.1.0",
+  "description": "Find leaked secrets and world-readable files in AI coding agent transcripts (Claude Code, Codex, Gemini CLI, Copilot CLI, OpenCode, Pi, Aider...), then redact them in place.",
+  "type": "module",
+  "bin": {
+    "agent-session-audit": "./bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "scripts": {
+    "test": "node --test test/detectors.test.js test/scan.test.js test/cli.test.js"
+  },
+  "engines": {
+    "node": ">=18.3"
+  },
+  "keywords": [
+    "secrets",
+    "secret-scanning",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "ai-agents",
+    "transcripts",
+    "privacy",
+    "security"
+  ],
+  "author": "akshay-th",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshay-th/agent-session-audit.git"
+  }
+}
